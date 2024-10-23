@@ -7,8 +7,8 @@ input.touchD0.onEvent(ButtonEvent.Click, function () {
     }
 })
 let strip: light.NeoPixelStrip = null
-strip = light.createStrip(pins.D1, 5)
-let brightness = 0
+strip = light.createStrip(pins.D1, 4)
+let brightness = 10
 pixel.setBrightness(brightness)
 strip.setAll(light.hsv(150, 255, 255))
 forever(function () {
